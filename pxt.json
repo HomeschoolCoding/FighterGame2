@@ -1,6 +1,6 @@
 {
-    "name": "Fighter Game",
-    "description": "",
+    "name": "Fighter Game 2",
+    "description": "Independent MakeCode Arcade fighter project for the Fighter Game 2 group.",
     "dependencies": {
         "device": "*"
     },
