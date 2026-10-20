@@ -3,7 +3,7 @@
 ## Start here
 
 1. Sign in to GitHub with **your own student account**.
-2. Open [your team's Kanban board](https://github.com/orgs/HomeschoolCoding/projects/3) and choose your assigned task.
+2. Open [your team's Kanban board](https://github.com/orgs/HomeschoolCoding/projects/3) and choose a **Ready** task with your team.
 3. Open [MakeCode Arcade](https://arcade.makecode.com/). If this is your first time, use **Import → Your GitHub Repo** and sign in to GitHub when prompted.
 4. Choose **Import → Import URL**, paste the repository URL below, and import the game. If MakeCode asks you to sign in to GitHub, use the same account as step 1.
 
@@ -14,6 +14,7 @@ This repository is private. You must connect your GitHub account to MakeCode to 
 ## Each work session
 
 - Open this game in MakeCode and use the GitHub button to pull the latest changes before editing.
+- Choose a **Ready** card and agree who owns it. **Blocked** cards must wait for their linked prerequisite to be merged.
 - Move your task to **In progress**, then make one small change.
 - Run the simulator and check the task's acceptance steps.
 - Use the GitHub button to commit and push with a short description of what you changed.
@@ -28,9 +29,25 @@ This repository is private. You must connect your GitHub account to MakeCode to 
 - Sanitary-Cannibalism
 - FARTINLUTHERKINGJR
 
-## Starting point and attribution
+## Blank starting point
 
-Started from HomeschoolCoding/FighterGame commit `ce29500165df88ab101753c9a26ac747417a4886` on October 20, 2026. Original commit history is retained to credit student contributions. This starter has the character art and background; movement, gravity, the second character, and combat are student tasks. It uses the JavaScript editor.
+The game starts with a blank screen: no sprites, background image, tile map, or gameplay code. A blank simulator is expected until you complete the first tasks. It uses the JavaScript editor.
+
+## First tasks
+
+- **Ready:** create both fighter sprites and the `fighter1` and `fighter2` variables, using simple placeholder images. This is the first prerequisite for character artwork.
+- **Ready in parallel:** create the arena background.
+- **Ready in parallel:** create the arena tile map.
+- **Blocked by sprite creation:** design fighter 1 artwork.
+- **Blocked by sprite creation:** design fighter 2 artwork.
+
+Once sprite creation is merged, pull the latest code before starting either artwork task. Use the existing variables rather than creating extra sprites. Each card has its own completion checklist and simulator demo.
+
+Background and tile map work can start immediately in separate named assets. Coordinate changes to `main.ts` and integrate one change at a time.
+
+## Attribution
+
+Repository history retains the original FighterGame contributions. Fighter Game 2's active code was cleared for a fresh classroom start on October 20, 2026.
 
 #### Metadata (used for search, rendering)
 
