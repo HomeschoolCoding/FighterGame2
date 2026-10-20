@@ -1,16 +1,26 @@
 # Fighter Game 2
 
-An independent Microsoft MakeCode Arcade classroom project.
+## Start here
 
-## Open in MakeCode Arcade
-
-[Import Fighter Game 2](https://arcade.makecode.com/#pub:github:HomeschoolCoding/FighterGame2)
-
-Or open https://arcade.makecode.com/, choose **Import → Import URL**, and paste:
+1. Sign in to GitHub with **your own student account**.
+2. Open [your team's Kanban board](https://github.com/orgs/HomeschoolCoding/projects/3) and choose your assigned task.
+3. Open [MakeCode Arcade](https://arcade.makecode.com/). If this is your first time, use **Import → Your GitHub Repo** and sign in to GitHub when prompted.
+4. Choose **Import → Import URL**, paste the repository URL below, and import the game. If MakeCode asks you to sign in to GitHub, use the same account as step 1.
 
 https://github.com/HomeschoolCoding/FighterGame2
 
-This project uses the JavaScript editor, matching the original game's configuration.
+This repository is private. You must connect your GitHub account to MakeCode to open it. A “not found” message usually means you are signed out, using the wrong account, or MakeCode needs access approved by the teacher. Ask the teacher instead of creating another repository.
+
+## Each work session
+
+- Open this game in MakeCode and use the GitHub button to pull the latest changes before editing.
+- Move your task to **In progress**, then make one small change.
+- Run the simulator and check the task's acceptance steps.
+- Use the GitHub button to commit and push with a short description of what you changed.
+- Coordinate edits to shared files with your teammates. Ask the teacher before resolving a merge conflict.
+- Move the card to **In Pull Request** when it is waiting for review; the teacher or reviewer moves it to **Done** after the work is integrated.
+
+[Open the board](https://github.com/orgs/HomeschoolCoding/projects/3) · [Open tasks](https://github.com/HomeschoolCoding/FighterGame2/issues)
 
 ## Team
 
@@ -18,21 +28,9 @@ This project uses the JavaScript editor, matching the original game's configurat
 - Sanitary-Cannibalism
 - FARTINLUTHERKINGJR
 
-Use this repository's linked **Fighter Game 2** project board to claim tasks and track progress.
-
 ## Starting point and attribution
 
-Copied from [HomeschoolCoding/FighterGame](https://github.com/HomeschoolCoding/FighterGame)
-at commit `ce29500165df88ab101753c9a26ac747417a4886` on October 20, 2026.
-The original commit history is retained to credit student contributions.
-The starter includes the existing character art and background. Movement,
-gravity, second-character work, and combat remain student tasks.
-Pending pull requests remain in the original repository for Fighter Game 1.
-
-## Workflow
-
-Choose a task, make one small change, test it in the Arcade simulator, and ask
-a teammate to review it before merging. Avoid editing shared code simultaneously.
+Started from HomeschoolCoding/FighterGame commit `ce29500165df88ab101753c9a26ac747417a4886` on October 20, 2026. Original commit history is retained to credit student contributions. This starter has the character art and background; movement, gravity, the second character, and combat are student tasks. It uses the JavaScript editor.
 
 #### Metadata (used for search, rendering)
 
