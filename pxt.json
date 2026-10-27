@@ -1,6 +1,6 @@
 {
     "name": "Fighter Game 2",
-    "description": "Four-player online multiplayer classroom starter; one student task per file.",
+    "description": "Intentionally unfinished four-player classroom starter; implement one feature per student file.",
     "dependencies": {
         "device": "*",
         "multiplayer": "*"

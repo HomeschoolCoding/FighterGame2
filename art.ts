@@ -20,9 +20,8 @@ namespace FighterArt {
     . . . d d . . . d d . . . . . .
     . . . . . . . . . . . . . . . .
 `
-        // Four costumes make online players easy to identify.
-        let colors = [2, 8, 5, 7]
-        picture.replace(1, colors[playerNumber - 1])
+        // TODO: keep this student's character and design four distinct costumes.
+        // Right now every player wears the same unfinished white outfit.
         return picture
     }
 }
