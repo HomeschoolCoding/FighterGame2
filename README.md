@@ -1,53 +1,44 @@
 # Fighter Game 2
 
-## Start here
+A working four-player online starter for the October 27 class.
 
-1. Sign in to GitHub with **your own student account**.
-2. Open [your team's Kanban board](https://github.com/orgs/HomeschoolCoding/projects/3) and choose a **Ready** task with your team.
-3. Open [MakeCode Arcade](https://arcade.makecode.com/). If this is your first time, use **Import → Your GitHub Repo** and sign in to GitHub when prompted.
-4. Choose **Import → Import URL**, paste the repository URL below, and import the game. If MakeCode asks you to sign in to GitHub, use the same account as step 1.
+## Start today
 
-https://github.com/HomeschoolCoding/FighterGame2
+1. Open [your board](https://github.com/orgs/HomeschoolCoding/projects/3) and agree one of the four Ready tasks with your team.
+2. Open [MakeCode Arcade](https://arcade.makecode.com/), choose **Import → Import URL**, and paste your exact task branch URL from the table below. Sign in with your own GitHub account if needed.
+3. Open JavaScript and **Explorer → Files**. Select your task's file. If the file explorer is collapsed, expand it to see the named files.
+4. Run the simulator. Before editing or pushing, check that the GitHub view shows the correct repository **and your task branch**, not master.
+5. Make one small change, playtest, commit and push to your branch, and open a pull request for the teacher.
 
-This repository is private. You must connect your GitHub account to MakeCode to open it. A “not found” message usually means you are signed out, using the wrong account, or MakeCode needs access approved by the teacher. Ask the teacher instead of creating another repository.
+| Choose a task | Your file | Import URL |
+| --- | --- | --- |
+| [Combat: make punches fair and satisfying](https://github.com/HomeschoolCoding/FighterGame2/issues/9) | `combat.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-punches` |
+| [Defense: build a shield with a cooldown](https://github.com/HomeschoolCoding/FighterGame2/issues/10) | `defense.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-shield` |
+| [Fighter art: design four readable costumes](https://github.com/HomeschoolCoding/FighterGame2/issues/7) | `art.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-fighter-art` |
+| [Arena: design a backdrop for the four-player fight](https://github.com/HomeschoolCoding/FighterGame2/issues/5) | `arena.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-arena-design` |
 
-## Each work session
+The multiplayer and startup code are ready in `main.ts`. You do not need to edit that file or `pxt.json`. Each student edits one separate file so the team can work at the same time. These starters use the JavaScript editor.
 
-- Open this game in MakeCode and use the GitHub button to pull the latest changes before editing.
-- Choose a **Ready** card and agree who owns it. **Blocked** cards must wait for their linked prerequisite to be merged.
-- Move your task to **In progress**, then make one small change.
-- Run the simulator and check the task's acceptance steps.
-- Use the GitHub button to commit and push with a short description of what you changed.
-- Coordinate edits to shared files with your teammates. Ask the teacher before resolving a merge conflict.
-- Move the card to **In Pull Request** when it is waiting for review; the teacher or reviewer moves it to **Done** after the work is integrated.
+## Play on separate computers
 
-[Open the board](https://github.com/orgs/HomeschoolCoding/projects/3) · [Open tasks](https://github.com/HomeschoolCoding/FighterGame2/issues)
+- The host opens the game and chooses **Share → Host a multiplayer game**. If the dialog first asks for a project name, continue to the multiplayer hosting option.
+- Other players open [MakeCode's game lobby](https://aka.ms/a9) on their own computers and enter the host's code, or use the host's join link.
+- The host starts the game. Up to four people, including the host, can play. The game runs in the host session; everyone sees the same screen. Joining a play session does not give somebody a separate copy to edit.
+- To try new code, the host starts a fresh session after updating the project.
 
-## Team
+Left/right move; A jumps; B punches; hold Down to block. In keyboard simulation, A is normally Z/Space and B is X/Enter; focus the simulator first.
 
-- urmomafk123
-- Sanitary-Cannibalism
-- FARTINLUTHERKINGJR
+Only connected players get characters. The host can test alone; other characters appear as players join. A disconnected player is removed and can rejoin.
 
-## Blank starting point
+## Finish your task
 
-The game starts with a blank screen: no sprites, background image, tile map, or gameplay code. A blank simulator is expected until you complete the first tasks. It uses the JavaScript editor.
+Run your card's checks with a teammate. Commit and push to your task branch, then open a PR to master and move the card to In Pull Request. While the teacher's starter PR is still under review, target `codex-classroom-multiplayer` if you need to open your task PR; retarget it to master once the starter is merged. Don't push directly to master or switch an old copy onto it by accident.
 
-## First tasks
+## Existing work
 
-- **Ready:** create both fighter sprites and the `fighter1` and `fighter2` variables, using simple placeholder images. This is the first prerequisite for character artwork.
-- **Ready in parallel:** create the arena background.
-- **Ready in parallel:** create the arena tile map.
-- **Blocked by sprite creation:** design fighter 1 artwork.
-- **Blocked by sprite creation:** design fighter 2 artwork.
+Original branches and history have been preserved. Source excerpts are in `student-work/`; the original full assets remain on their branches. The original babysprite character is used in the starter with four costume colors. The October 22 tilemap work is preserved on the tilemap branch for future stages.
 
-Once sprite creation is merged, pull the latest code before starting either artwork task. Use the existing variables rather than creating extra sprites. Each card has its own completion checklist and simulator demo.
-
-Background and tile map work can start immediately in separate named assets. Coordinate changes to `main.ts` and integrate one change at a time.
-
-## Attribution
-
-Repository history retains the original FighterGame contributions. Fighter Game 2's active code was cleared for a fresh classroom start on October 20, 2026.
+[Official online multiplayer guide](https://arcade.makecode.com/multiplayer)
 
 #### Metadata (used for search, rendering)
 

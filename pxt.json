@@ -1,19 +1,21 @@
 {
     "name": "Fighter Game 2",
-    "description": "Independent MakeCode Arcade fighter project for the Fighter Game 2 group.",
+    "description": "Four-player online multiplayer classroom starter; one student task per file.",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "multiplayer": "*"
     },
     "files": [
+        "art.ts",
+        "arena.ts",
+        "combat.ts",
+        "defense.ts",
         "main.ts",
-        "README.md",
-        "assets.json"
+        "README.md"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
-        "target": "4.1.25",
+        "target": "4.1.27",
         "targetId": "arcade"
     },
     "supportedTargets": [
