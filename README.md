@@ -6,7 +6,7 @@ The approved starting point is merged into master. This game intentionally needs
 
 1. Choose one of the 5 Ready tasks on [your board](https://github.com/orgs/HomeschoolCoding/projects/3) with the team.
 2. Open [MakeCode Arcade](https://arcade.makecode.com), use **Import → Import URL**, and paste your exact task branch below. Use a fresh import; old browser copies do not update automatically.
-3. Open JavaScript → Explorer → Files and select your one task file. Before editing or pushing, check the repository and branch.
+3. Open JavaScript → Explorer → Files and select your one task file. Find **STUDENT TASK START** and **STUDENT TASK END**. Edit inside those comments and follow the **CHANGE THIS FIRST / WRITE / EDIT** notes. Before editing or pushing, check the repository and branch.
 4. Make one small improvement, run your card's checks with a teammate, commit and push to your task branch. When ready today or next class, open a PR into **master** for teacher review.
 
 | Task | File | Starting point | Import URL |
