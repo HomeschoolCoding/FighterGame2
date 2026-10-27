@@ -1,5 +1,8 @@
 // YOUR TASK: punches and attack feedback. Edit only this file.
 namespace Combat {
+    // STUDENT TASK START: Combat: make weak punches useful and fair (#9)
+    // CHANGE THIS FIRST: make Fighters.hurt(target, 1) deal useful damage.
+    // Then tune nextPunch to a one-second per-player cooldown. Keep range/facing checks.
     let nextPunch = [0, 0, 0, 0, 0]
 
     export function punch(playerNumber: number): void {
@@ -19,4 +22,6 @@ namespace Combat {
             }
         }
     }
+    // STUDENT TASK END: Combat: make weak punches useful and fair
+
 }

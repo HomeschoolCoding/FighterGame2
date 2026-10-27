@@ -1,5 +1,9 @@
 // YOUR TASK: turn the upward throw into a useful ranged attack.
 namespace Ranged {
+    // STUDENT TASK START: Ranged attack: turn the upward throw into a useful shot (#13)
+    // CHANGE THIS FIRST: change the projectile velocity and launch height in fire().
+    // Use Fighters.facing(playerNumber); then tune damage in start() and nextThrow.
+    // Keep the owner check and projectile cleanup.
     let nextThrow = [0, 0, 0, 0, 0]
 
     export function fire(playerNumber: number): void {
@@ -30,4 +34,6 @@ namespace Ranged {
             }
         })
     }
+    // STUDENT TASK END: Ranged attack: turn the upward throw into a useful shot
+
 }
