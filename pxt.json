@@ -1,6 +1,6 @@
 {
     "name": "Fighter Game 2",
-    "description": "Intentionally unfinished four-player classroom starter; implement one feature per student file.",
+    "description": "Four-player classroom starting point with five independent tasks.",
     "dependencies": {
         "device": "*",
         "multiplayer": "*"
@@ -10,6 +10,7 @@
         "arena.ts",
         "combat.ts",
         "defense.ts",
+        "ranged.ts",
         "main.ts",
         "README.md"
     ],
