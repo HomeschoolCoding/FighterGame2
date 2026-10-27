@@ -17,7 +17,7 @@ namespace Combat {
             if (target != playerNumber && victim) {
                 let ahead = (victim.x - attacker.x) * Fighters.facing(playerNumber)
                 if (ahead >= 0 && ahead < 22 && Math.abs(victim.y - attacker.y) < 18) {
-                    Fighters.hurt(target, 1)
+                    Fighters.hurt(target, 10)
                 }
             }
         }
