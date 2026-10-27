@@ -5,12 +5,9 @@ namespace Arena {
 
     export function draw(): void {
         let background = image.create(160, 120)
-        background.fill(9)
-        background.fillRect(0, 76, 160, 30, 8)
-        background.fillRect(0, floorY(), 160, 14, 4)
-        background.drawLine(0, floorY(), 159, floorY(), 1)
-        background.fillRect(12, 54, 12, 22, 10)
-        background.fillRect(136, 54, 12, 22, 10)
+        // TODO: build a themed stage. This gray screen is only a placeholder.
+        background.fill(13)
+        background.drawLine(0, floorY(), 159, floorY(), 12)
         scene.setBackgroundImage(background)
     }
 }

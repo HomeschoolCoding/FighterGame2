@@ -1,5 +1,5 @@
 // TEACHER HELPER: four-player connection, movement, health and respawn.
-// Students edit art.ts, arena.ts, combat.ts or defense.ts instead.
+// Students edit art.ts, arena.ts, combat.ts, defense.ts or ranged.ts instead.
 namespace Fighters {
     let characters: Sprite[] = []
     let health = [0, 100, 100, 100, 100]
@@ -37,6 +37,7 @@ namespace Fighters {
     }
     export function start(): void {
         Arena.draw()
+        Ranged.start()
         mp.setPlayerIndicatorsVisible(true)
         mp.onControllerEvent(ControllerEvent.Connected, function (player) { connect(player) })
         mp.onControllerEvent(ControllerEvent.Disconnected, function (player) {
@@ -51,13 +52,16 @@ namespace Fighters {
             mp.moveWithButtons(player, 65, 0)
             if (n == 1 || mp.isConnected(player)) connect(player)
         }
-        mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player) {
+        mp.onButtonEvent(mp.MultiplayerButton.Up, ControllerButtonEvent.Pressed, function (player) {
             let n = mp.getPlayerProperty(player, mp.PlayerProperty.Number)
             let fighter = characters[n]
             if (fighter && fighter.bottom >= Arena.floorY() - 1) fighter.vy = -135
         })
-        mp.onButtonEvent(mp.MultiplayerButton.B, ControllerButtonEvent.Pressed, function (player) {
+        mp.onButtonEvent(mp.MultiplayerButton.A, ControllerButtonEvent.Pressed, function (player) {
             Combat.punch(mp.getPlayerProperty(player, mp.PlayerProperty.Number))
+        })
+        mp.onButtonEvent(mp.MultiplayerButton.B, ControllerButtonEvent.Pressed, function (player) {
+            Ranged.fire(mp.getPlayerProperty(player, mp.PlayerProperty.Number))
         })
         game.onUpdate(function () {
             for (let n = 1; n <= 4; n++) {
@@ -78,7 +82,7 @@ namespace Fighters {
                 if (characters[n]) screen.print("P" + n + ":" + health[n], (n - 1) * 40, 1, 1)
             }
             screen.fillRect(0, 112, 160, 8, 15)
-            screen.print("A jump B punch DOWN block", 7, 113, 1)
+            screen.print("UP jump A hit B throw", 10, 113, 1)
         })
     }
 }

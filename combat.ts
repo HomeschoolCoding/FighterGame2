@@ -5,6 +5,8 @@ namespace Combat {
     export function punch(playerNumber: number): void {
         let attacker = Fighters.spriteFor(playerNumber)
         if (!attacker || game.runtime() < nextPunch[playerNumber]) return
+        // TODO: these 1-damage punches take 100 hits to defeat a fighter.
+        // Tune damage and implement a fair one-second cooldown per player.
         nextPunch[playerNumber] = game.runtime() + 700
         attacker.sayText("POW", 200, false)
         for (let target = 1; target <= 4; target++) {
@@ -12,7 +14,7 @@ namespace Combat {
             if (target != playerNumber && victim) {
                 let ahead = (victim.x - attacker.x) * Fighters.facing(playerNumber)
                 if (ahead >= 0 && ahead < 22 && Math.abs(victim.y - attacker.y) < 18) {
-                    Fighters.hurt(target, 10)
+                    Fighters.hurt(target, 1)
                 }
             }
         }

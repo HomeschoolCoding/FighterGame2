@@ -1,45 +1,34 @@
 # Fighter Game 2
 
-A working four-player online starter for the October 27 class.
+The approved starting point is merged into master. This game intentionally needs student implementation; unchanged starter behavior does not complete a task. Existing student artwork is preserved.
 
-## Start today
+## Start class
 
-1. Open [your board](https://github.com/orgs/HomeschoolCoding/projects/3) and agree one of the four Ready tasks with your team.
-2. Open [MakeCode Arcade](https://arcade.makecode.com/), choose **Import → Import URL**, and paste your exact task branch URL from the table below. Sign in with your own GitHub account if needed.
-3. Open JavaScript and **Explorer → Files**. Select your task's file. If the file explorer is collapsed, expand it to see the named files.
-4. Run the simulator. Before editing or pushing, check that the GitHub view shows the correct repository **and your task branch**, not master.
-5. Make one small change, playtest, commit and push to your branch, and open a pull request for the teacher.
+1. Choose one of the 5 Ready tasks on [your board](https://github.com/orgs/HomeschoolCoding/projects/3) with the team.
+2. Open [MakeCode Arcade](https://arcade.makecode.com), use **Import → Import URL**, and paste your exact task branch below. Use a fresh import; old browser copies do not update automatically.
+3. Open JavaScript → Explorer → Files and select your one task file. Before editing or pushing, check the repository and branch.
+4. Make one small improvement, run your card's checks with a teammate, commit and push to your task branch. When ready today or next class, open a PR into **master** for teacher review.
 
-| Choose a task | Your file | Import URL |
-| --- | --- | --- |
-| [Combat: make punches fair and satisfying](https://github.com/HomeschoolCoding/FighterGame2/issues/9) | `combat.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-punches` |
-| [Defense: build a shield with a cooldown](https://github.com/HomeschoolCoding/FighterGame2/issues/10) | `defense.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-shield` |
-| [Fighter art: design four readable costumes](https://github.com/HomeschoolCoding/FighterGame2/issues/7) | `art.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-fighter-art` |
-| [Arena: design a backdrop for the four-player fight](https://github.com/HomeschoolCoding/FighterGame2/issues/5) | `arena.ts` | `https://github.com/HomeschoolCoding/FighterGame2#codex-arena-design` |
+| Task | File | Starting point | Import URL |
+| --- | --- | --- | --- |
+| [Combat: make weak punches useful and fair](https://github.com/HomeschoolCoding/FighterGame2/issues/9) | `combat.ts` | Punches work, but deal only 1 damage against 100 health. A fight takes about 100 successful hits; the starter cooldown is 700 ms. | `https://github.com/HomeschoolCoding/FighterGame2#codex-punches` |
+| [Defense: replace the unlimited block with a fair shield](https://github.com/HomeschoolCoding/FighterGame2/issues/10) | `defense.ts` | Holding DOWN subtracts one point from every hit with no cooldown. It makes the starter 1-damage punches harmless forever, and is too weak once combat damage increases. | `https://github.com/HomeschoolCoding/FighterGame2#codex-shield` |
+| [Ranged attack: turn the upward throw into a useful shot](https://github.com/HomeschoolCoding/FighterGame2/issues/13) | `ranged.ts` | B throws a black square straight upward. It rarely hits an opponent, deals only 1 damage and has a 300 ms cooldown. | `https://github.com/HomeschoolCoding/FighterGame2#codex-ranged-attack` |
+| [Fighter art: develop four costumes from the student character](https://github.com/HomeschoolCoding/FighterGame2/issues/7) | `art.ts` | The original student-made fighter is kept, but every player has the same white outfit. The generated four-color costumes have been removed. | `https://github.com/HomeschoolCoding/FighterGame2#codex-fighter-art` |
+| [Arena: replace the gray placeholder with a stage](https://github.com/HomeschoolCoding/FighterGame2/issues/5) | `arena.ts` | There is only a gray screen and a floor guide. The generated buildings, ground colors and finished scenery have been removed. | `https://github.com/HomeschoolCoding/FighterGame2#codex-arena-design` |
 
-The multiplayer and startup code are ready in `main.ts`. You do not need to edit that file or `pxt.json`. Each student edits one separate file so the team can work at the same time. These starters use the JavaScript editor.
+## Controls and supplied setup
 
-## Play on separate computers
+Left/right move, Up jumps, A punches, B throws, and Down blocks.
 
-- The host opens the game and chooses **Share → Host a multiplayer game**. If the dialog first asks for a project name, continue to the multiplayer hosting option.
-- Other players open [MakeCode's game lobby](https://aka.ms/a9) on their own computers and enter the host's code, or use the host's join link.
-- The host starts the game. Up to four people, including the host, can play. The game runs in the host session; everyone sees the same screen. Joining a play session does not give somebody a separate copy to edit.
-- To try new code, the host starts a fresh session after updating the project.
+Four-player connections, movement, health and respawn are supplied. Wait one second after joining/respawning before damage tests. Punches deal only 1 damage against 100 health. The starting block subtracts one point indefinitely, so it needs a fair cooldown. The ranged attack flies up instead of sideways. These are normal game mechanics to improve, not extra test controls.
 
-Left/right move; A jumps; B punches; hold Down to block. In keyboard simulation, A is normally Z/Space and B is X/Enter; focus the simulator first.
+The student's original 16 x 16 fighter remains, with identical white costumes. The arena is gray with a floor guide at y = 106. Original babysprite and tilemap branches remain preserved. Four students may choose four of the five tasks and leave the remaining task for later.
 
-Only connected players get characters. The host can test alone; other characters appear as players join. A disconnected player is removed and can rejoin.
+## Working together
 
-## Finish your task
+Each task has its own file and prepared branch: `combat.ts`, `defense.ts`, `ranged.ts`, `art.ts`, `arena.ts`. Leave teacher helpers, `main.ts`, `pxt.json`, other students' files and GitHub settings for the teacher. Stay in JavaScript. The branch contains the current classroom baseline, so you can start immediately. Only one student should claim a task branch at a time.
 
-Run your card's checks with a teammate. Commit and push to your task branch, then open a PR to master and move the card to In Pull Request. While the teacher's starter PR is still under review, target `codex-classroom-multiplayer` if you need to open your task PR; retarget it to master once the starter is merged. Don't push directly to master or switch an old copy onto it by accident.
+Use small commits and push progress to your branch. When you finish, open a PR into master and include your before/after demonstration. The teacher reviews and merges student changes. After other work is merged, coordinate with the teacher before pulling shared changes or resolving conflicts; never overwrite another student's work.
 
-## Existing work
-
-Original branches and history have been preserved. Source excerpts are in `student-work/`; the original full assets remain on their branches. The original babysprite character is used in the starter with four costume colors. The October 22 tilemap work is preserved on the tilemap branch for future stages.
-
-[Official online multiplayer guide](https://arcade.makecode.com/multiplayer)
-
-#### Metadata (used for search, rendering)
-
-* for PXT/arcade
+For simulator testing, connect players 2–4 with their player buttons. Native online play uses Share → Host a multiplayer game, then classmates join at https://aka.ms/a9 or the host link. Playing together is separate from editing code. Actual online sign-in testing remains for the teacher.
